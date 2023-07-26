@@ -1,0 +1,9 @@
+.fixo-topo{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
+  padding: 4rem;
+  border: 1px solid #000;
+}
