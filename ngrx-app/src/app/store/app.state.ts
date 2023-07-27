@@ -1,11 +1,12 @@
 import { createAction, createReducer, on, props } from '@ngrx/store';
+import { BehaviorSubject } from 'rxjs';
 
 export interface IAppState {
   counter: number;
 }
 
 export const INITIAL_STATE: IAppState = {
-  counter: 1,
+  counter: 0,
 };
 
 export const incrementa = createAction('[App] Aumenta contador');

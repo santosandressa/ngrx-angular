@@ -1,13 +1,19 @@
-<div *ngIf="counter$ | async as counter">
+<div class="container" *ngIf="{ value: counter$ | async } as counter">
 
-  <h1>{{ counter}} </h1>
-
-  <button (click)="incrementaContador()">Increment</button>
-  <button (click)="decrementaContador()">Decrement</button>
   <app-display-contador></app-display-contador>
 
+  <div class="btn">
+    <h1>{{ counter.value }} </h1>
 
-  <input #inputContador style="margin-top: 6rem;" type="text">
-  <button (click)="definirContador(inputContador.value)">Definir</button>
+    <div class="btn-counter">
+      <button (click)="incrementaContador()">Increment</button>
+      <button (click)="decrementaContador()">Decrement</button>
+    </div>
 
+  </div>
+
+  <div class="input-div">
+    <input #inputContador type="text">
+    <button (click)="definirContador(inputContador.value)">Definir</button>
+  </div>
 </div>
