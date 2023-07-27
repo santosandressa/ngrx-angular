@@ -1,3 +1,3 @@
-<div *ngIf="counter$ | async as counter">
-  <p class="fixo-topo"> {{ counter }} </p>
+<div *ngIf="{ value: counter$ | async } as counter">
+  <p class="fixo-topo"> {{ counter.value }} </p>
 </div>
