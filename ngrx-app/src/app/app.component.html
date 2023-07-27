@@ -4,8 +4,10 @@
 
   <button (click)="incrementaContador()">Increment</button>
   <button (click)="decrementaContador()">Decrement</button>
-
-
   <app-display-contador></app-display-contador>
+
+
+  <input #inputContador style="margin-top: 6rem;" type="text">
+  <button (click)="definirContador(inputContador.value)">Definir</button>
 
 </div>
